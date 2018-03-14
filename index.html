@@ -24,13 +24,13 @@
       <div class="collapse navbar-collapse justify-content-md-center" id="navbarsExampleDefault">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="index.html">Track Bike <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="index.html">Track Bike<span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Live Traffic</a>
+            <a class="nav-link" href="traffic.html">Live Traffic</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Manage Bike</a>
+            <a class="nav-link" href="manage.html">Manage Bike</a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="javascript:void(0);" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Select Your Bike</a>
@@ -54,6 +54,17 @@
         <h1>Welcome Back, Andrew!</h1>
         <p>Here's the location of your bike.</p>
       </div>
+
+      <form id="choosebike">
+        <div class="form-group">
+          <label for="searchclass">Select a bike:</label>
+          <select class="form-control" onchange="refreshmap()" id="bikelist" name="bikelist">
+            <option value="1">Bike Wazowski</option>
+            <option value="2">Micycle</option>
+          </select>
+        </div>
+      </form>
+
     </main><!-- /.container -->
 
     
