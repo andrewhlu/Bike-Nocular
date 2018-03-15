@@ -23,14 +23,14 @@
 
       <div class="collapse navbar-collapse justify-content-md-center" id="navbarsExampleDefault">
         <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="index.html">Track Bike<span class="sr-only">(current)</span></a>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Track Bike</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="traffic.html">Live Traffic</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="manage.html">Manage Bike</a>
+          <li class="nav-item active">
+            <a class="nav-link" href="manage.html">Manage Bike<span class="sr-only">(current)</span></a>
           </li>
         </ul>
         <!-- <form class="form-inline my-2 my-lg-0">
@@ -40,27 +40,82 @@
       </div>
     </nav>
 
-    <div id="map"></div>
-
     <main role="main" class="container">
       <div class="starter-template">
-        <h1>Welcome Back, Andrew!</h1>
-        <p>Here's the location of your bike.</p>
+        <h1>Manage your bikes below:</h1>
       </div>
 
-      <form id="choosebike">
-        <div class="form-group">
-          <label for="searchclass">Select a bike:</label>
-          <select class="form-control" onchange="refreshmap()" id="bikelist" name="bikelist">
-            <option value="1">Bike Wazowski</option>
-            <option value="2">Micycle</option>
-          </select>
-        </div>
-      </form>
+      <div class="container">
+        <div class="card-deck mb-3 text-center">
+          <div class="card mb-6 box-shadow">
+            <div class="card-header">
+              <h4 class="my-0 font-weight-normal">Bike Wazowski</h4>
+            </div>
+            <div class="card-body">
+              <img src="images/mike.png" alt="Mike" width="300">
+
+              <h1 class="card-title pricing-card-title">86 <small class="text-muted">% Battery</small></h1>
+              <ul class="list-unstyled mt-3 mb-4">
+                <li><strong>Beach Cruiser, Blue</strong></li>
+                <li>Bike-Nocular 1.0</li>
+                <li>License Number: 7820513<br>&nbsp</li>
+
+                <a href="index.html" class="btn btn-outline-success">Track Bike</a>
+                <li>Online. Last pinged 5s ago.</li>
+                <li>&nbsp</li>
+
+                <li><strong>Need to get your bike serviced?</strong></li>
+                <a href="#">Request Service from A.S. Bike Shop</a><br>
+                <a href="#">Request Service from CSO</a>
+                <li>&nbsp</li>
+
+                <a href="#">Rename Bike</a>
+                <li>&nbsp</li>
+
+                <li><strong>Danger Zone:</strong></li>
+                <a href="#" style="color:red">Transfer Bike Ownership</a><br>
+                <a href="#" style="color:red">Deactivate Anti-Tampering System</a><br>
+              </ul>
+            </div>
+          </div>
+          <div class="card mb-6 box-shadow">
+            <div class="card-header">
+              <h4 class="my-0 font-weight-normal">Micycle</h4>
+            </div>
+            <div class="card-body">
+              <img src="images/micycle.jpg" alt="Mike" width="300">
+
+              <h1 class="card-title pricing-card-title">75 <small class="text-muted">% Battery</small></h1>
+              <ul class="list-unstyled mt-3 mb-4">
+                <li><strong>6KU Fixie Bike, Blue</strong></li>
+                <li>Bike-Noculock 1.0</li>
+                <li>License Number: 1182893<br>&nbsp</li>
+
+                <a href="index.html" class="btn btn-outline-success">Track Bike</a>
+                <li>Online. Last pinged 5s ago.</li>
+                <li>&nbsp</li>
+
+                <a href="#" class="btn btn-success">Bike Locked</a>
+                <li>Tap to unlock bike.<br>Your bike must be connected to your phone.</li>
+                <li>&nbsp</li>
+
+                <li><strong>Need to get your bike serviced?</strong></li>
+                <a href="#">Request Service from A.S. Bike Shop</a><br>
+                <a href="#">Request Service from CSO</a>
+                <li>&nbsp</li>
+
+                <a href="#">Rename Bike</a>
+                <li>&nbsp</li>
+
+                <li><strong>Danger Zone:</strong></li>
+                <a href="#" style="color:red">Transfer Bike Ownership</a><br>
+                <a href="#" style="color:red">Deactivate Anti-Tampering System</a><br>
+              </ul>
+            </div>
+          </div>
+      </div>
 
     </main><!-- /.container -->
-
-    
 
     <!-- Google Maps API -->
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDwkFQubxuDEhTLNr4Psg5wYFUxNpawG2c&callback=initMap"></script>
